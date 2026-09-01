@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/"
+>
+<channel>
+    <title>Sample Export</title>
+    <link>https://example.com</link>
+    <description>WordPress Sample Import Data</description>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+    <language>ja</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+
+    <!-- ==========================================
+         アイキャッチ画像（メディアアタッチメント）定義
+         ※外部ダミー画像URLを指定（インポート時にダウンロード可）
+         ========================================== -->
+    <?php
+    $images = [
+        1001 => 'https://picsum.photos/id/10/1200/800',
+        1002 => 'https://picsum.photos/id/20/1200/800',
+        1003 => 'https://picsum.photos/id/30/1200/800',
+        1004 => 'https://picsum.photos/id/40/1200/800',
+        1005 => 'https://picsum.photos/id/50/1200/800',
+        1006 => 'https://picsum.photos/id/60/1200/800',
+        1007 => 'https://picsum.photos/id/70/1200/800',
+        1008 => 'https://picsum.photos/id/80/1200/800',
+    ];
+    ?>
+
+    <!-- 1. 画像メディアの定義 -->
+    <item>
+        <title>Dummy Image 1</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>1001</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-01 10:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-01 01:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[dummy-image-1]]></wp:post_name>
+        <wp:status><![CDATA[inherit]]></wp:status>
+        <wp:post_type><![CDATA[attachment]]></wp:post_type>
+        <wp:attachment_url><![CDATA[https://picsum.photos/id/10/1200/800]]></wp:attachment_url>
+    </item>
+    <item>
+        <title>Dummy Image 2</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>1002</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-02 10:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-02 01:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[dummy-image-2]]></wp:post_name>
+        <wp:status><![CDATA[inherit]]></wp:status>
+        <wp:post_type><![CDATA[attachment]]></wp:post_type>
+        <wp:attachment_url><![CDATA[https://picsum.photos/id/20/1200/800]]></wp:attachment_url>
+    </item>
+    <item>
+        <title>Dummy Image 3</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>1003</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-03 10:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-03 01:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[dummy-image-3]]></wp:post_name>
+        <wp:status><![CDATA[inherit]]></wp:status>
+        <wp:post_type><![CDATA[attachment]]></wp:post_type>
+        <wp:attachment_url><![CDATA[https://picsum.photos/id/30/1200/800]]></wp:attachment_url>
+    </item>
+    <item>
+        <title>Dummy Image 4</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>1004</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-04 10:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-04 01:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[dummy-image-4]]></wp:post_name>
+        <wp:status><![CDATA[inherit]]></wp:status>
+        <wp:post_type><![CDATA[attachment]]></wp:post_type>
+        <wp:attachment_url><![CDATA[https://picsum.photos/id/40/1200/800]]></wp:attachment_url>
+    </item>
+    <item>
+        <title>Dummy Image 5</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>1005</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-05 10:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-05 01:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[dummy-image-5]]></wp:post_name>
+        <wp:status><![CDATA[inherit]]></wp:status>
+        <wp:post_type><![CDATA[attachment]]></wp:post_type>
+        <wp:attachment_url><![CDATA[https://picsum.photos/id/50/1200/800]]></wp:attachment_url>
+    </item>
+    <item>
+        <title>Dummy Image 6</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>1006</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-06 10:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-06 01:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[dummy-image-6]]></wp:post_name>
+        <wp:status><![CDATA[inherit]]></wp:status>
+        <wp:post_type><![CDATA[attachment]]></wp:post_type>
+        <wp:attachment_url><![CDATA[https://picsum.photos/id/60/1200/800]]></wp:attachment_url>
+    </item>
+    <item>
+        <title>Dummy Image 7</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>1007</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-07 10:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-07 01:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[dummy-image-7]]></wp:post_name>
+        <wp:status><![CDATA[inherit]]></wp:status>
+        <wp:post_type><![CDATA[attachment]]></wp:post_type>
+        <wp:attachment_url><![CDATA[https://picsum.photos/id/70/1200/800]]></wp:attachment_url>
+    </item>
+    <item>
+        <title>Dummy Image 8</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>1008</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-08 10:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-08 01:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[closed]]></wp:comment_status>
+        <wp:ping_status><![CDATA[closed]]></wp:ping_status>
+        <wp:post_name><![CDATA[dummy-image-8]]></wp:post_name>
+        <wp:status><![CDATA[inherit]]></wp:status>
+        <wp:post_type><![CDATA[attachment]]></wp:post_type>
+        <wp:attachment_url><![CDATA[https://picsum.photos/id/80/1200/800]]></wp:attachment_url>
+    </item>
+
+    <!-- ==========================================
+         投稿記事（8件）
+         ========================================== -->
+    <!-- 記事 1 -->
+    <item>
+        <title>Webデザインの最新トレンドと実践テクニック</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>2001</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-01 10:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-01 01:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[web-design-trends]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>モダンなWebデザインでは、アクセシビリティと視覚的な美しさの両立が不可欠です。本記事では基礎から解説します。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2>デザイン構築のポイント</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>グリッドシステムを活用した整列と、十分な余白の確保がユーザー体験を向上させる鍵となります。</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+            <wp:meta_value><![CDATA[1001]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- 記事 2 -->
+    <item>
+        <title>フロントエンド開発における効率的な環境構築</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>2002</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-02 11:30:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-02 02:30:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[frontend-dev-environment]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>快適な開発環境は作業効率を劇的に向上させます。最新のビルドツールやエディタ拡張機能を導入しましょう。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul><!-- wp:list-item --><li>高速なローカルサーバーの準備</li><!-- /wp:list-item --><!-- wp:list-item --><li>Linter / Formatter の自動化</li><!-- /wp:list-item --></ul>
+<!-- /wp:list -->]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+            <wp:meta_value><![CDATA[1002]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- 記事 3 -->
+    <item>
+        <title>アクセシビリティを高めるためのカラーパレット構築</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>2003</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-03 09:15:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-03 00:15:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[accessible-color-palette]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>コントラスト比を意識した色選定は、すべてのユーザーにとって見やすいWebサイトを作る基本です。</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>「デザインは見た目だけでなく、どのように機能するかである。」</p></blockquote>
+<!-- /wp:quote -->]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+            <wp:meta_value><![CDATA[1003]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- 記事 4 -->
+    <item>
+        <title>WordPressテーマ開発でのコンポーネント設計</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>2004</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-04 14:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-04 05:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[wordpress-theme-component-design]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>再利用性の高いパーツ設計（パターンやブロック）を行うことで、運用保守のしやすいコードを実現できます。</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+            <wp:meta_value><![CDATA[1004]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- 記事 5 -->
+    <item>
+        <title>Webサイトの表示速度を改善する画像最適化手法</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>2005</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-05 16:45:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-05 07:45:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[image-optimization-techniques]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>次世代画像フォーマットの採用や適切なリサイズを行うことで、Core Web Vitalsのスコアを改善します。</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+            <wp:meta_value><![CDATA[1005]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- 記事 6 -->
+    <item>
+        <title>UI/UXデザインにおけるタイポグラフィの重要性</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>2006</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-06 08:30:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-05 23:30:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[typography-in-uiux]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>フォントサイズ、行高、文字間の適切な調整により、情報伝達の正確性と読了率が飛躍的に高まります。</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+            <wp:meta_value><![CDATA[1006]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- 記事 7 -->
+    <item>
+        <title>効果的なポートフォリオ作成のステップとコツ</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>2007</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-07 13:20:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-07 04:20:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[portfolio-creation-steps]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>制作物の成果だけでなく、どのようなプロセスや思考を経て制作したのか（思考ロジック）を明記することが大切です。</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+            <wp:meta_value><![CDATA[1007]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+    <!-- 記事 8 -->
+    <item>
+        <title>セマンティックHTMLを意識したコーディング手法</title>
+        <dc:creator><![CDATA[admin]]></dc:creator>
+        <wp:post_id>2008</wp:post_id>
+        <wp:post_date><![CDATA[2026-08-08 17:00:00]]></wp:post_date>
+        <wp:post_date_gmt><![CDATA[2026-08-08 08:00:00]]></wp:post_date_gmt>
+        <wp:comment_status><![CDATA[open]]></wp:comment_status>
+        <wp:ping_status><![CDATA[open]]></wp:ping_status>
+        <wp:post_name><![CDATA[semantic-html-coding]]></wp:post_name>
+        <wp:status><![CDATA[publish]]></wp:status>
+        <wp:post_type><![CDATA[post]]></wp:post_type>
+        <content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>適切なHTMLタグを選択することは、SEOやスクリーンリーダー対応において非常に有効なアプローチとなります。</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+        <wp:postmeta>
+            <wp:meta_key><![CDATA[_thumbnail_id]]></wp:meta_key>
+            <wp:meta_value><![CDATA[1008]]></wp:meta_value>
+        </wp:postmeta>
+    </item>
+
+</channel>
+</rss>
