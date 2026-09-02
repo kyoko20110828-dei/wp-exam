@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WordPressテーマ化練習用サイト | TOP</title>
     <?php wp_enqueue_style('main-style', get_template_directory_uri() . '/css/style.css'); ?>
     <?php wp_head(); ?>
 </head>
@@ -15,7 +14,7 @@
     <header class="site-header">
         <div class="container">
             <div class="site-logo">
-                <a href="index.html">WP Practice</a>
+                <a href="<?= home_url(); ?>"><?php bloginfo('name'); ?></a>
             </div>
             <nav class="global-nav">
                 <ul>
