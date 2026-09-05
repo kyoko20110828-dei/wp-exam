@@ -13,7 +13,7 @@
     <h2>私たちについて</h2>
     <p>このサイトは、静的HTML/CSSからWordPressテーマを作成するプロセスを体系的に学ぶためのデモ練習用サイトです。コーディング初心者の方に向けて、WordPress固有の記述方法や仕組みを優しく解説します。</p>
     <div class="about-btn-wrapper">
-      <a href="page.html" class="btn-primary">詳しく見る</a>
+      <a href="<?= get_permalink(2015); ?>" class="btn-primary">詳しく見る</a>
     </div>
   </div>
 </section>
@@ -29,7 +29,7 @@
 
           <?php while (have_posts()): the_post(); ?>
 
-            <?php get_template_part('template-parts/loop','blog'); ?>
+            <?php get_template_part('template-parts/loop', 'blog'); ?>
 
           <?php endwhile; ?>
 
