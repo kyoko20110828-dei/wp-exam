@@ -7,11 +7,14 @@
                 <p>WordPressテーマ化の学習用デモサイトです。</p>
             </div>
             <nav class="footer-links">
-                <ul>
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="page.html">私たちについて</a></li>
-                    <li><a href="archive.html">ブログ</a></li>
-                </ul>
+                <?php
+                $args = [
+                    'menu' => 'footer-sns', // 管理画面のメニュー名
+                    'menu_class' => '', // ulからクラスが削除される
+                    'container' => false, // ulを囲んでいるdivを削除
+                ];
+                wp_nav_menu($args);
+                ?>
             </nav>
         </div>
         <div class="copyright">

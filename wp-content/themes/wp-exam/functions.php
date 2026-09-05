@@ -31,3 +31,8 @@ function my_pre_get_posts(mixed $query)
     // カテゴリーページの場合
     // カスタム投稿ページの場合
 }
+
+/**
+ * カスタムメニュー機能を使用可能にする
+ */
+add_theme_support('menus');
